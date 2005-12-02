@@ -1,3 +1,5 @@
+# TODO
+# - optflags
 Summary:	An NFS traffic monitoring tool
 Name:		nfswatch
 Version:	4.99.5
@@ -22,6 +24,7 @@ Install nfswatch if you need a program to monitor NFS traffic.
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	LINUXCFLAGS="-DLINUX -I/usr/include/ncurses"
 
 %install
