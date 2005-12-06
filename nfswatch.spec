@@ -1,6 +1,7 @@
 # TODO
 # - optflags
 Summary:	An NFS traffic monitoring tool
+Summary(pl):	Narzêdzie do monitorowania ruchu NFS
 Name:		nfswatch
 Version:	4.99.5
 Release:	0.1
@@ -17,7 +18,10 @@ Nfswatch is a command-line tool for monitoring NFS traffic. Nfswatch
 can capture and analyze the NFS packets on a particular network
 interface or on all interfaces.
 
-Install nfswatch if you need a program to monitor NFS traffic.
+%description -l pl
+nfswatch to dzia³aj±ce z linii poleceñ narzêdzie do monitorowania
+ruchu NFS. nfswatch potrafi wy³apywaæ i analizowaæ pakiety NFS na
+konkretnym interfejsie sieciowym lub wszystkich interfejsach.
 
 %prep
 %setup -q
@@ -29,14 +33,13 @@ Install nfswatch if you need a program to monitor NFS traffic.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d ${RPM_BUILD_ROOT}%{_mandir}/man8
-install -d ${RPM_BUILD_ROOT}%{_sbindir}
+install -d $RPM_BUILD_ROOT{%{_mandir}/man8,%{_sbindir}}
 
-install nfslogsum nfswatch ${RPM_BUILD_ROOT}%{_sbindir}
-install *.8 ${RPM_BUILD_ROOT}%{_mandir}/man8
+install nfslogsum nfswatch $RPM_BUILD_ROOT%{_sbindir}
+install *.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
