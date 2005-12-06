@@ -1,5 +1,3 @@
-# TODO
-# - optflags
 Summary:	An NFS traffic monitoring tool
 Summary(pl):	Narzêdzie do monitorowania ruchu NFS
 Name:		nfswatch
@@ -9,7 +7,7 @@ License:	BSD
 Group:		Networking
 Source0:	http://dl.sourceforge.net/nfswatch/%{name}-%{version}.tar.gz
 # Source0-md5:	15c178ade0532a935f0522a9d108b975
-URL:		http://nfswatch.sourceforge.net
+URL:		http://nfswatch.sourceforge.net/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +27,7 @@ konkretnym interfejsie sieciowym lub wszystkich interfejsach.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	LINUXCFLAGS="-DLINUX -I/usr/include/ncurses"
+	LINUXCFLAGS="%{rpmcflags} -DLINUX -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
