@@ -1,5 +1,5 @@
 Summary:	An NFS traffic monitoring tool
-Summary(pl):	Narzêdzie do monitorowania ruchu NFS
+Summary(pl.UTF-8):   NarzÄ™dzie do monitorowania ruchu NFS
 Name:		nfswatch
 Version:	4.99.5
 Release:	0.1
@@ -16,9 +16,9 @@ Nfswatch is a command-line tool for monitoring NFS traffic. Nfswatch
 can capture and analyze the NFS packets on a particular network
 interface or on all interfaces.
 
-%description -l pl
-nfswatch to dzia³aj±ce z linii poleceñ narzêdzie do monitorowania
-ruchu NFS. nfswatch potrafi wy³apywaæ i analizowaæ pakiety NFS na
+%description -l pl.UTF-8
+nfswatch to dziaÅ‚ajÄ…ce z linii poleceÅ„ narzÄ™dzie do monitorowania
+ruchu NFS. nfswatch potrafi wyÅ‚apywaÄ‡ i analizowaÄ‡ pakiety NFS na
 konkretnym interfejsie sieciowym lub wszystkich interfejsach.
 
 %prep
