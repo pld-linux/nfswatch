@@ -1,5 +1,5 @@
 Summary:	An NFS traffic monitoring tool
-Summary(pl.UTF-8):   Narzędzie do monitorowania ruchu NFS
+Summary(pl.UTF-8):	Narzędzie do monitorowania ruchu NFS
 Name:		nfswatch
 Version:	4.99.5
 Release:	0.1
