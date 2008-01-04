@@ -1,12 +1,12 @@
 Summary:	An NFS traffic monitoring tool
 Summary(pl.UTF-8):	Narzędzie do monitorowania ruchu NFS
 Name:		nfswatch
-Version:	4.99.5
+Version:	4.99.9
 Release:	0.1
 License:	BSD
 Group:		Networking
 Source0:	http://dl.sourceforge.net/nfswatch/%{name}-%{version}.tar.gz
-# Source0-md5:	15c178ade0532a935f0522a9d108b975
+# Source0-md5:	0e0735115b99ebe150789c93746f0772
 URL:		http://nfswatch.sourceforge.net/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
